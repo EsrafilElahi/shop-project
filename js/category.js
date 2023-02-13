@@ -20,6 +20,7 @@ function addFeats() {
   featsDiv.appendChild(clone)
 }
 
+
 function addFeatsName() {
   const feats = document.getElementById("feats");
 
