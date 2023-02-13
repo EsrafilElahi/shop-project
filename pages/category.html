@@ -29,7 +29,7 @@
 
   <body class="main-body leftmenu">
     <!-- Page -->
-    <div class="contaienr-div">
+    <div class="container-div">
       <!-- name -->
       <div class="name-div">
         <div class="name-div-ar">
@@ -46,64 +46,80 @@
       <div class="desc-div">
         <div class="desc-div-ar">
           <label class="" for="description-ar">description : ar</label>
-          <textarea class="inp" id="description-ar" type="text"></textarea>
+          <textarea
+            rows="4"
+            cols="30"
+            class="inp"
+            id="description-ar"
+            type="text"
+          ></textarea>
         </div>
 
         <div class="desc-div-ar">
           <label class="" for="description-tr">description : tr</label>
-          <textarea class="inp" id="description-tr" type="text"></textarea>
+          <textarea
+            rows="4"
+            cols="30"
+            class="inp"
+            id="description-tr"
+            type="text"
+          ></textarea>
         </div>
       </div>
 
-      <!-- feat title ar -->
-      <div id="feat-title-ar-div" class="feat-div">
-        <div class="feat-title-div">
-          <label class="" for="feat-title-ar">feature title : ar</label>
-          <input class="inp" id="feat-title-ar" type="text" />
-        </div>
-        <div class="">
-          <div id="btn-feat-ar" class="feat-title-btn">
-            <span>+</span>
+      <div id="feats-div" class="feats-div">
+        <div id="feats" class="feats">
+          <!-- feat title ar -->
+          <div id="feat-title-ar-div" class="feat-div">
+            <div class="feat-title-div">
+              <label class="" for="feat-title-ar">feature title : ar</label>
+              <input class="inp" id="feat-title-ar" type="text" />
+            </div>
+            <div class="">
+              <div id="btn-feat-title-ar" class="feat-title-btn">
+                <span>+</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- feat title tr -->
-      <div id="feat-title-tr-div" class="feat-div">
-        <div class="feat-title-div">
-          <label class="" for="feat-title-tr">feature title : ar</label>
-          <input class="inp" id="feat-title-tr" type="text" />
-        </div>
-        <div>
-          <div id="btn-feat-tr" class="feat-title-btn">
-            <span>+</span>
+          <!-- feat title tr -->
+          <div id="feat-title-tr-div" class="feat-div">
+            <div class="feat-title-div">
+              <label class="" for="feat-title-tr">feature title : tr</label>
+              <input class="inp" id="feat-title-tr" type="text" />
+            </div>
+            <div>
+              <div id="btn-feat-title-tr" class="feat-title-btn">
+                <span>+</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div></div>
+          <div></div>
 
-      <!-- feat name ar -->
-      <div id="feat-name-ar-div" class="feat-div">
-        <div class="feat-name-div">
-          <label class="" for="feat-name-ar">feature name : ar</label>
-          <input class="inp" id="feat-name-ar" type="text" />
-        </div>
-        <div class="">
-          <div id="btn-feat-ar" class="feat-name-btn">
-            <span>+</span>
+          <!-- feat name ar -->
+          <div id="feat-name-ar-div" class="feat-div">
+            <div class="feat-name-div">
+              <label class="" for="feat-name-ar">feature name : ar</label>
+              <input class="inp" id="feat-name-ar" type="text" />
+            </div>
+            <div class="">
+              <div id="btn-feat-name-ar" class="feat-name-btn">
+                <span>+</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- feat name tr -->
-      <div id="feat-name-ar-div" class="feat-div">
-        <div class="feat-name-div">
-          <label class="" for="feat-name-tr">feature name : ar</label>
-          <input class="inp" id="feat-name-tr" type="text" />
-        </div>
-        <div>
-          <div id="btn-feat-tr" class="feat-name-btn">
-            <span>+</span>
+          <!-- feat name tr -->
+          <div id="feat-name-tr-div" class="feat-div">
+            <div class="feat-name-div">
+              <label class="" for="feat-name-tr">feature name : tr</label>
+              <input class="inp" id="feat-name-tr" type="text" />
+            </div>
+            <div>
+              <div id="btn-feat-name-tr" class="feat-name-btn">
+                <span>+</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -122,5 +138,6 @@
 
     <!-- Custom js -->
     <script src="assets/js/custom.js"></script>
+    <script src="../js/category.js"></script>
   </body>
 </html>

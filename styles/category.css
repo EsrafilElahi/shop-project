@@ -8,7 +8,23 @@
   font-size: 16px;
 }
 
+textarea {
+  font-size: 16px !important;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
 .container-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
 }
 
 .name-div {
@@ -37,6 +53,18 @@
 
 /* =========== */
 
+.feats-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.feats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .feat-div {
   display: flex;
   align-items: end;
@@ -51,12 +79,16 @@
 
 .feat-title-btn {
   background-color: rgb(46, 123, 238);
-  padding: 10px 15px;
+  padding: 3px 10px;
   border-radius: 7px;
   color: white;
   cursor: pointer;
   transition: background-color ease 0.5s;
 }
+.feat-title-btn > span {
+  font-size: 30px;
+}
+
 .feat-title-btn:hover {
   background-color: rgb(6, 80, 229);
 }
@@ -69,11 +101,14 @@
 
 .feat-name-btn {
   background-color: rgb(46, 123, 238);
-  padding: 10px 15px;
+  padding: 3px 10px;
   border-radius: 7px;
   color: white;
   cursor: pointer;
   transition: background-color ease 0.5s;
+}
+.feat-name-btn > span {
+  font-size: 30px;
 }
 .feat-name-btn:hover {
   background-color: rgb(6, 80, 229);
