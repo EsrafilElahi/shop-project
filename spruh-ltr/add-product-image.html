@@ -333,10 +333,14 @@
                   <a class="nav-sub-link" href="category.html">Category</a>
                 </li>
                 <li class="nav-sub-item">
-                  <a class="nav-sub-link" href="add-product.html">Add Product</a>
+                  <a class="nav-sub-link" href="add-product.html"
+                    >Add Product</a
+                  >
                 </li>
                 <li class="nav-sub-item">
-                  <a class="nav-sub-link" href="add-product-image.html">Add Product Image</a>
+                  <a class="nav-sub-link" href="add-product-image.html"
+                    >Add Product Image</a
+                  >
                 </li>
                 <li class="nav-sub-item">
                   <a class="nav-sub-link" href="cart.html">Cart</a>
@@ -595,7 +599,281 @@
       <!-- Mobile-header closed -->
       <!-- Main Content-->
       <div class="main-content side-content pt-0">
-        <div class="container-fluid"></div>
+        <div class="container-fluid">
+          <span
+            >-------------------------------------- image
+            ---------------------------------------</span
+          >
+
+          <!-- Iamge Block -->
+          <div class="div-img-inp d-flex flex-column flex-md-row">
+            <div class="div-desc-ar form-group m-3">
+              <label>
+                your image file
+                <input
+                  class="form-control"
+                  type="file"
+                  name="myImage"
+                  accept="image/png, image/gif, image/jpeg"
+                />
+              </label>
+            </div>
+          </div>
+
+          <span
+            >-------------------------------------- detail
+            ---------------------------------------</span
+          >
+
+          <!-------------------- custom form -------------------->
+          <div class="all-block">
+            <!-- 1 -->
+            <div class="form-block-top mt-5 mt-md-3">
+              <!-- name -->
+              <div class="div-name d-flex flex-column flex-md-row">
+                <div class="div-name-ar form-group m-3">
+                  <lable>name : ar</lable>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="div-name-tr form-group m-3">
+                  <lable>name : tr</lable>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+
+              <!-- desc -->
+              <div class="div-desc d-flex flex-column flex-md-row">
+                <div class="div-desc-ar form-group m-3">
+                  <lable>description : ar</lable>
+                  <textarea
+                    cols="40"
+                    rows="6"
+                    type="text"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <div class="div-desc-tr form-group m-3">
+                  <lable>description : tr</lable>
+                  <textarea
+                    cols="40"
+                    rows="6"
+                    type="text"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="br-s form-group m-3">
+                <lable>brand</lable>
+                <select class="form-control rounded">
+                  <option value="1">brand 1</option>
+                  <option value="2">brand 2</option>
+                </select>
+              </div>
+              <div class="cat-s form-group m-3">
+                <lable>category</lable>
+                <select class="form-control rounded">
+                  <option value="1">cat 1</option>
+                  <option value="2">cat 2</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="form-block mt-5 mt-md-3">
+              <!-- FT -->
+              <div class="div-ft d-flex flex-column flex-md-row">
+                <div class="ft-ar form-group m-3">
+                  <lable>feature title : ar</lable>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="ft-tr form-group m-3">
+                  <lable>feature title : tr</lable>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="ft-s form-group m-3">
+                  <lable>feature title type</lable>
+                  <select class="form-control rounded">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+                <div
+                  class="ft-btn d-flex justify-content-center align-items-end m-3"
+                >
+                  <button class="counter-plus btn btn-light">+</button>
+                </div>
+              </div>
+
+              <!-- FN -->
+              <div class="div-fn d-flex flex-column flex-md-row">
+                <div class="fn-ar form-group m-3">
+                  <lable>feature name : ar</lable>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="fn-tr form-group m-3">
+                  <lable>feature name : tr</lable>
+                  <input type="text" class="form-control" />
+                </div>
+                <div
+                  class="fn-btn d-flex justify-content-center align-items-end m-3"
+                >
+                  <button class="counter-plus btn btn-light">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="form-block mt-5 mt-md-3">
+              <span
+                >-----------------------------------------------------------
+                color
+                -----------------------------------------------------------</span
+              >
+              <div class="color-block">
+                <!-- Color -->
+                <div class="div-color d-flex flex-column flex-md-row">
+                  <div class="color-ar form-group m-3">
+                    <lable>color name : ar</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="color-tr form-group m-3">
+                    <lable>color name : tr</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div
+                    class="color-btn d-flex justify-content-center align-items-end m-3"
+                  >
+                    <button class="counter-plus btn btn-light">+</button>
+                  </div>
+                </div>
+
+                <!-- Size -->
+                <div class="div-size d-flex flex-column flex-md-row">
+                  <div class="size-ar form-group m-3">
+                    <lable>size : ar</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="size-tr form-group m-3">
+                    <lable>size : tr</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div
+                    class="size-btn d-flex justify-content-center align-items-end m-3"
+                  >
+                    <button class="counter-plus btn btn-light">+</button>
+                  </div>
+                </div>
+
+                <!-- Other Feats -->
+                <!-- Title -->
+                <div class="div-title d-flex flex-column flex-md-row">
+                  <div class="title-ar form-group m-3">
+                    <lable>title : ar</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="title-tr form-group m-3">
+                    <lable>title : tr</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- Stock & Price -->
+                <div class="div-stock-price d-flex flex-column flex-md-row">
+                  <div class="stock-div form-group m-3">
+                    <lable>stock</lable>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="price-div form-group m-3">
+                    <lable>price $</lable>
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- Has Discount & Is Timed Discount -->
+                <div class="div-dis-timed d-flex flex-column flex-md-row">
+                  <div class="form-check m-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      has discount
+                    </label>
+                  </div>
+                  <div class="form-check m-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      is timed discount
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Old Price & Discount Percent -->
+                <div class="div-oldP-disP d-flex flex-column flex-md-row">
+                  <div class="oldP-div form-group m-3">
+                    <lable>old price $</lable>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="disP-div form-group m-3">
+                    <lable>discount percent %</lable>
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- Discount Start & Discount End -->
+                <div class="div-disS-disE d-flex flex-column flex-md-row">
+                  <div class="disS-div form-group m-3">
+                    <lable>discount start</lable>
+                    <input type="date" class="form-control" />
+                  </div>
+                  <div class="disE-div form-group m-3">
+                    <lable>discount end</lable>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- status -->
+                <div class="div-disS-disE d-flex flex-column align-items-start">
+                  <span class="ml-3 mt-3">status</span>
+                  <div
+                    class="disS-div form-group d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="disS-div form-group ml-3 mt-1 d-flex justify-content-center align-items-center"
+                    >
+                      <input type="radio" id="active" name="active" />
+                      <label class="mx-2 mb-0" for="active">active</label>
+                    </div>
+
+                    <div
+                      class="disS-div form-group ml-3 mt-1 d-flex justify-content-center align-items-center"
+                    >
+                      <input type="radio" id="in-active" name="in-active" />
+                      <label class="mx-2 mb-0" for="in-active">in-active</label>
+                    </div>
+
+                    <div
+                      class="disS-div form-group ml-3 mt-1 d-flex justify-content-center align-items-center"
+                    >
+                      <input type="radio" id="hidden" name="hidden" />
+                      <label class="mx-2 mb-0" for="hidden">hidden</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- End Main Content-->
 
