@@ -55,6 +55,32 @@
     <!-- Select2 css-->
     <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
 
+    <!-- Owl-carousel css-->
+    <link
+      href="assets/plugins/owl-carousel/owl.carousel.css"
+      rel="stylesheet"
+    />
+
+    <!-- Mutipleselect css-->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/multipleselect/multiple-select.css"
+    />
+
+    <!-- Internal DataTables css-->
+    <link
+      href="assets/plugins/datatable/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/datatable/responsivebootstrap4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/datatable/fileexport/buttons.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Sidemenu css-->
     <link href="assets/css/sidemenu/sidemenu.css" rel="stylesheet" />
 
@@ -330,280 +356,253 @@
       <!-- End Sidemenu -->
       <!-- Main Header-->
       <div class="main-header side-header sticky">
-        <div class="container-fluid d-md-none">
-          <div class="main-header-left">
+        <div class="container-fluid">
+          <div class="main-header-left d-md-none">
             <a class="main-header-menu-icon" href="#" id="mainSidebarToggle"
               ><span></span
             ></a>
-          </div>
-          <div class="main-header-center">
-            <div class="responsive-logo">
-              <a href="index.html"
-                ><img
-                  src="assets/img/brand/logo.png"
-                  class="mobile-logo"
-                  alt="logo"
-              /></a>
-              <a href="index.html"
-                ><img
-                  src="assets/img/brand/logo-light.png"
-                  class="mobile-logo-dark"
-                  alt="logo"
-              /></a>
-            </div>
-            <div class="input-group">
-              <div class="input-group-btn search-panel">
-                <select class="form-control select2-no-search">
-                  <option label="All categories"></option>
-                  <option value="IT Projects">IT Projects</option>
-                  <option value="Business Case">Business Case</option>
-                  <option value="Microsoft Project">Microsoft Project</option>
-                  <option value="Risk Management">Risk Management</option>
-                  <option value="Team Building">Team Building</option>
-                </select>
-              </div>
-              <input
-                type="search"
-                class="form-control"
-                placeholder="Search for anything..."
-              />
-              <button class="btn search-btn">
-                <i class="fe fe-search"></i>
-              </button>
-            </div>
-          </div>
-          <div class="main-header-right">
-            <div class="dropdown header-search">
-              <a class="nav-link icon header-search">
-                <i class="fe fe-search header-icons"></i>
-              </a>
-              <div class="dropdown-menu">
-                <div class="main-form-search p-2">
-                  <div class="input-group">
-                    <div class="input-group-btn search-panel">
-                      <select class="form-control select2-no-search">
-                        <option label="All categories"></option>
-                        <option value="IT Projects">IT Projects</option>
-                        <option value="Business Case">Business Case</option>
-                        <option value="Microsoft Project">
-                          Microsoft Project
-                        </option>
-                        <option value="Risk Management">Risk Management</option>
-                        <option value="Team Building">Team Building</option>
-                      </select>
-                    </div>
-                    <input
-                      type="search"
-                      class="form-control"
-                      placeholder="Search for anything..."
-                    />
-                    <button class="btn search-btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-search"
-                      >
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="dropdown main-header-notification flag-dropdown">
-              <a class="nav-link icon country-Flag">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <circle cx="256" cy="256" r="256" fill="#f0f0f0" />
-                  <g fill="#0052b4">
-                    <path
-                      d="M52.92 100.142c-20.109 26.163-35.272 56.318-44.101 89.077h133.178L52.92 100.142zM503.181 189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075 89.076h133.176zM8.819 322.784c8.83 32.758 23.993 62.913 44.101 89.075l89.074-89.075H8.819zM411.858 52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177l89.076-89.075zM100.142 459.079c26.163 20.109 56.318 35.272 89.076 44.102V370.005l-89.076 89.074zM189.217 8.819c-32.758 8.83-62.913 23.993-89.075 44.101l89.075 89.075V8.819zM322.783 503.181c32.758-8.83 62.913-23.993 89.075-44.101l-89.075-89.075v133.176zM370.005 322.784l89.075 89.076c20.108-26.162 35.272-56.318 44.101-89.076H370.005z"
-                    />
-                  </g>
-                  <g fill="#d80027">
-                    <path
-                      d="M509.833 222.609H289.392V2.167A258.556 258.556 0 00256 0c-11.319 0-22.461.744-33.391 2.167v220.441H2.167A258.556 258.556 0 000 256c0 11.319.744 22.461 2.167 33.391h220.441v220.442a258.35 258.35 0 0066.783 0V289.392h220.442A258.533 258.533 0 00512 256c0-11.317-.744-22.461-2.167-33.391z"
-                    />
-                    <path
-                      d="M322.783 322.784L437.019 437.02a256.636 256.636 0 0015.048-16.435l-97.802-97.802h-31.482v.001zM189.217 322.784h-.002L74.98 437.019a256.636 256.636 0 0016.435 15.048l97.802-97.804v-31.479zM189.217 189.219v-.002L74.981 74.98a256.636 256.636 0 00-15.048 16.435l97.803 97.803h31.481zM322.783 189.219L437.02 74.981a256.328 256.328 0 00-16.435-15.047l-97.802 97.803v31.482z"
-                    />
-                  </g>
-                </svg>
-              </a>
-              <div class="dropdown-menu">
-                <a href="#" class="dropdown-item d-flex">
-                  <span class="avatar mr-3 align-self-center bg-transparent"
-                    ><img src="assets/img/flags/french_flag.jpg" alt="img"
-                  /></span>
-                  <div class="d-flex">
-                    <span class="mt-2">French</span>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item d-flex">
-                  <span class="avatar mr-3 align-self-center bg-transparent"
-                    ><img src="assets/img/flags/germany_flag.jpg" alt="img"
-                  /></span>
-                  <div class="d-flex">
-                    <span class="mt-2">Germany</span>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item d-flex">
-                  <span class="avatar mr-3 align-self-center bg-transparent"
-                    ><img src="assets/img/flags/italy_flag.jpg" alt="img"
-                  /></span>
-                  <div class="d-flex">
-                    <span class="mt-2">Italy</span>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item d-flex">
-                  <span class="avatar mr-3 align-self-center bg-transparent"
-                    ><img src="assets/img/flags/russia_flag.jpg" alt="img"
-                  /></span>
-                  <div class="d-flex">
-                    <span class="mt-2">Russia</span>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item d-flex">
-                  <span class="avatar mr-3 align-self-center bg-transparent"
-                    ><img src="assets/img/flags/spain_flag.jpg" alt="img"
-                  /></span>
-                  <div class="d-flex">
-                    <span class="mt-2">spain</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="dropdown d-md-flex">
-              <a class="nav-link icon full-screen-link" href="#">
-                <i
-                  class="fe fe-maximize fullscreen-button fullscreen header-icons"
-                ></i>
-                <i
-                  class="fe fe-minimize fullscreen-button exit-fullscreen header-icons"
-                ></i>
-              </a>
-            </div>
-            <div class="dropdown main-header-notification">
-              <a class="nav-link icon" href="#">
-                <i class="fe fe-bell header-icons"></i>
-                <span class="badge badge-danger nav-link-badge">4</span>
-              </a>
-              <div class="dropdown-menu">
-                <div class="header-navheading">
-                  <p class="main-notification-text">
-                    You have 1 unread notification<span
-                      class="badge badge-pill badge-primary ml-3"
-                      >View all</span
-                    >
-                  </p>
-                </div>
-                <div class="main-notification-list">
-                  <div class="media new">
-                    <div class="main-img-user online">
-                      <img alt="avatar" src="assets/img/users/5.jpg" />
-                    </div>
-                    <div class="media-body">
-                      <p>
-                        Congratulate <strong>Olivia James</strong> for New
-                        template start
-                      </p>
-                      <span>Oct 15 12:32pm</span>
-                    </div>
-                  </div>
-                  <div class="media">
-                    <div class="main-img-user">
-                      <img alt="avatar" src="assets/img/users/2.jpg" />
-                    </div>
-                    <div class="media-body">
-                      <p><strong>Joshua Gray</strong> New Message Received</p>
-                      <span>Oct 13 02:56am</span>
-                    </div>
-                  </div>
-                  <div class="media">
-                    <div class="main-img-user online">
-                      <img alt="avatar" src="assets/img/users/3.jpg" />
-                    </div>
-                    <div class="media-body">
-                      <p>
-                        <strong>Elizabeth Lewis</strong> added new schedule
-                        realease
-                      </p>
-                      <span>Oct 12 10:40pm</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="dropdown-footer">
-                  <a href="#">View All Notifications</a>
-                </div>
-              </div>
-            </div>
-            <div class="main-header-notification">
-              <a class="nav-link icon" href="chat.html">
-                <i class="fe fe-message-square header-icons"></i>
-                <span class="badge badge-success nav-link-badge">6</span>
-              </a>
-            </div>
-            <div class="dropdown main-profile-menu">
-              <a class="d-flex" href="#">
-                <span class="main-img-user"
-                  ><img alt="avatar" src="assets/img/users/1.jpg"
-                /></span>
-              </a>
-              <div class="dropdown-menu">
-                <div class="header-navheading">
-                  <h6 class="main-notification-title">Sonia Taylor</h6>
-                  <p class="main-notification-text">Web Designer</p>
-                </div>
-                <a class="dropdown-item border-top" href="profile.html">
-                  <i class="fe fe-user"></i> My Profile
-                </a>
-                <a class="dropdown-item" href="profile.html">
-                  <i class="fe fe-edit"></i> Edit Profile
-                </a>
-                <a class="dropdown-item" href="profile.html">
-                  <i class="fe fe-settings"></i> Account Settings
-                </a>
-                <a class="dropdown-item" href="profile.html">
-                  <i class="fe fe-settings"></i> Support
-                </a>
-                <a class="dropdown-item" href="profile.html">
-                  <i class="fe fe-compass"></i> Activity
-                </a>
-                <a class="dropdown-item" href="signin.html">
-                  <i class="fe fe-power"></i> Sign Out
-                </a>
-              </div>
-            </div>
-            <div class="dropdown d-md-flex header-settings">
-              <a
-                href="#"
-                class="nav-link icon"
-                data-toggle="sidebar-right"
-                data-target=".sidebar-right"
-              >
-                <i class="fe fe-align-right header-icons"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>
       <!-- End Main Header-->
       <!-- Mobile-header -->
-
+      <div class="mobile-main-header">
+        <div
+          class="mb-1 navbar navbar-expand-lg nav nav-item navbar-nav-right responsive-navbar navbar-dark"
+        >
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <div class="d-flex order-lg-2 ml-auto">
+              <div class="dropdown header-search">
+                <a class="nav-link icon header-search">
+                  <i class="fe fe-search header-icons"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="main-form-search p-2">
+                    <div class="input-group">
+                      <div class="input-group-btn search-panel">
+                        <select class="form-control select2-no-search">
+                          <option label="All categories"></option>
+                          <option value="IT Projects">IT Projects</option>
+                          <option value="Business Case">Business Case</option>
+                          <option value="Microsoft Project">
+                            Microsoft Project
+                          </option>
+                          <option value="Risk Management">
+                            Risk Management
+                          </option>
+                          <option value="Team Building">Team Building</option>
+                        </select>
+                      </div>
+                      <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Search for anything..."
+                      />
+                      <button class="btn search-btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-search"
+                        >
+                          <circle cx="11" cy="11" r="8"></circle>
+                          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown main-header-notification flag-dropdown">
+                <a class="nav-link icon country-Flag">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <circle cx="256" cy="256" r="256" fill="#f0f0f0" />
+                    <g fill="#0052b4">
+                      <path
+                        d="M52.92 100.142c-20.109 26.163-35.272 56.318-44.101 89.077h133.178L52.92 100.142zM503.181 189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075 89.076h133.176zM8.819 322.784c8.83 32.758 23.993 62.913 44.101 89.075l89.074-89.075H8.819zM411.858 52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177l89.076-89.075zM100.142 459.079c26.163 20.109 56.318 35.272 89.076 44.102V370.005l-89.076 89.074zM189.217 8.819c-32.758 8.83-62.913 23.993-89.075 44.101l89.075 89.075V8.819zM322.783 503.181c32.758-8.83 62.913-23.993 89.075-44.101l-89.075-89.075v133.176zM370.005 322.784l89.075 89.076c20.108-26.162 35.272-56.318 44.101-89.076H370.005z"
+                      />
+                    </g>
+                    <g fill="#d80027">
+                      <path
+                        d="M509.833 222.609H289.392V2.167A258.556 258.556 0 00256 0c-11.319 0-22.461.744-33.391 2.167v220.441H2.167A258.556 258.556 0 000 256c0 11.319.744 22.461 2.167 33.391h220.441v220.442a258.35 258.35 0 0066.783 0V289.392h220.442A258.533 258.533 0 00512 256c0-11.317-.744-22.461-2.167-33.391z"
+                      />
+                      <path
+                        d="M322.783 322.784L437.019 437.02a256.636 256.636 0 0015.048-16.435l-97.802-97.802h-31.482v.001zM189.217 322.784h-.002L74.98 437.019a256.636 256.636 0 0016.435 15.048l97.802-97.804v-31.479zM189.217 189.219v-.002L74.981 74.98a256.636 256.636 0 00-15.048 16.435l97.803 97.803h31.481zM322.783 189.219L437.02 74.981a256.328 256.328 0 00-16.435-15.047l-97.802 97.803v31.482z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item d-flex">
+                    <span class="avatar mr-3 align-self-center bg-transparent"
+                      ><img src="assets/img/flags/french_flag.jpg" alt="img"
+                    /></span>
+                    <div class="d-flex">
+                      <span class="mt-2">French</span>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-item d-flex">
+                    <span class="avatar mr-3 align-self-center bg-transparent"
+                      ><img src="assets/img/flags/germany_flag.jpg" alt="img"
+                    /></span>
+                    <div class="d-flex">
+                      <span class="mt-2">Germany</span>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-item d-flex">
+                    <span class="avatar mr-3 align-self-center bg-transparent"
+                      ><img src="assets/img/flags/italy_flag.jpg" alt="img"
+                    /></span>
+                    <div class="d-flex">
+                      <span class="mt-2">Italy</span>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-item d-flex">
+                    <span class="avatar mr-3 align-self-center bg-transparent"
+                      ><img src="assets/img/flags/russia_flag.jpg" alt="img"
+                    /></span>
+                    <div class="d-flex">
+                      <span class="mt-2">Russia</span>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-item d-flex">
+                    <span class="avatar mr-3 align-self-center bg-transparent"
+                      ><img src="assets/img/flags/spain_flag.jpg" alt="img"
+                    /></span>
+                    <div class="d-flex">
+                      <span class="mt-2">spain</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="nav-link icon full-screen-link">
+                  <i
+                    class="fe fe-maximize fullscreen-button fullscreen header-icons"
+                  ></i>
+                  <i
+                    class="fe fe-minimize fullscreen-button exit-fullscreen header-icons"
+                  ></i>
+                </a>
+              </div>
+              <div class="dropdown main-header-notification">
+                <a class="nav-link icon" href="#">
+                  <i class="fe fe-bell header-icons"></i>
+                  <span class="badge badge-danger nav-link-badge">4</span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="header-navheading">
+                    <p class="main-notification-text">
+                      You have 1 unread notification<span
+                        class="badge badge-pill badge-primary ml-3"
+                        >View all</span
+                      >
+                    </p>
+                  </div>
+                  <div class="main-notification-list">
+                    <div class="media new">
+                      <div class="main-img-user online">
+                        <img alt="avatar" src="assets/img/users/5.jpg" />
+                      </div>
+                      <div class="media-body">
+                        <p>
+                          Congratulate <strong>Olivia James</strong> for New
+                          template start
+                        </p>
+                        <span>Oct 15 12:32pm</span>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="main-img-user">
+                        <img alt="avatar" src="assets/img/users/2.jpg" />
+                      </div>
+                      <div class="media-body">
+                        <p><strong>Joshua Gray</strong> New Message Received</p>
+                        <span>Oct 13 02:56am</span>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="main-img-user online">
+                        <img alt="avatar" src="assets/img/users/3.jpg" />
+                      </div>
+                      <div class="media-body">
+                        <p>
+                          <strong>Elizabeth Lewis</strong> added new schedule
+                          realease
+                        </p>
+                        <span>Oct 12 10:40pm</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-footer">
+                    <a href="#">View All Notifications</a>
+                  </div>
+                </div>
+              </div>
+              <div class="main-header-notification mt-2">
+                <a class="nav-link icon" href="chat.html">
+                  <i class="fe fe-message-square header-icons"></i>
+                  <span class="badge badge-success nav-link-badge">6</span>
+                </a>
+              </div>
+              <div class="dropdown main-profile-menu">
+                <a class="d-flex" href="#">
+                  <span class="main-img-user"
+                    ><img alt="avatar" src="assets/img/users/1.jpg"
+                  /></span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="header-navheading">
+                    <h6 class="main-notification-title">Sonia Taylor</h6>
+                    <p class="main-notification-text">Web Designer</p>
+                  </div>
+                  <a class="dropdown-item border-top" href="profile.html">
+                    <i class="fe fe-user"></i> My Profile
+                  </a>
+                  <a class="dropdown-item" href="profile.html">
+                    <i class="fe fe-edit"></i> Edit Profile
+                  </a>
+                  <a class="dropdown-item" href="profile.html">
+                    <i class="fe fe-settings"></i> Account Settings
+                  </a>
+                  <a class="dropdown-item" href="profile.html">
+                    <i class="fe fe-settings"></i> Support
+                  </a>
+                  <a class="dropdown-item" href="profile.html">
+                    <i class="fe fe-compass"></i> Activity
+                  </a>
+                  <a class="dropdown-item" href="signin.html">
+                    <i class="fe fe-power"></i> Sign Out
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown header-settings">
+                <a
+                  href="#"
+                  class="nav-link icon"
+                  data-toggle="sidebar-right"
+                  data-target=".sidebar-right"
+                >
+                  <i class="fe fe-align-right header-icons"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Mobile-header closed -->
-
-      <!---------------------------------------------- Main Content--------------------------------------------->
+      <!-- Main Content-->
       <div class="main-content side-content pt-0">
         <div class="container-fluid">
           <!-------------------- custom form -------------------->
           <div class="all-block">
+            <!-- 1 -->
             <div class="form-block-top mt-5 mt-md-3">
               <!-- name -->
               <div class="div-name d-flex flex-column flex-md-row">
@@ -639,22 +638,23 @@
                 </div>
               </div>
 
-              <!-- image file input -->
-              <div class="div-file-input d-flex flex-column flex-md-row">
-                <div class="div-desc-ar form-group m-3">
-                  <label>
-                    your image file
-                    <input
-                      class="form-control"
-                      type="file"
-                      name="myImage"
-                      accept="image/png, image/gif, image/jpeg"
-                    />
-                  </label>
-                </div>
+              <div class="br-s form-group m-3">
+                <lable>brand</lable>
+                <select class="form-control rounded">
+                  <option value="1">brand 1</option>
+                  <option value="2">brand 2</option>
+                </select>
+              </div>
+              <div class="cat-s form-group m-3">
+                <lable>category</lable>
+                <select class="form-control rounded">
+                  <option value="1">cat 1</option>
+                  <option value="2">cat 2</option>
+                </select>
               </div>
             </div>
 
+            <!-- 2 -->
             <div class="form-block mt-5 mt-md-3">
               <!-- FT -->
               <div class="div-ft d-flex flex-column flex-md-row">
@@ -678,11 +678,6 @@
                 >
                   <button class="counter-plus btn btn-light">+</button>
                 </div>
-                <!-- <div
-                  class="ft-btn-rm d-flex justify-content-center align-items-end m-3"
-                >
-                  <button class="counter-plus btn btn-light">-</button>
-                </div> -->
               </div>
 
               <!-- FN -->
@@ -700,11 +695,156 @@
                 >
                   <button class="counter-plus btn btn-light">+</button>
                 </div>
-                <!-- <div
-                  class="fn-btn-rm d-flex justify-content-center align-items-end m-3"
-                >
-                  <button class="counter-plus btn btn-light">-</button>
-                </div> -->
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="form-block mt-5 mt-md-3">
+              <span
+                >-----------------------------------------------------------
+                color
+                -----------------------------------------------------------</span
+              >
+              <div class="color-block">
+                <!-- Color -->
+                <div class="div-color d-flex flex-column flex-md-row">
+                  <div class="color-ar form-group m-3">
+                    <lable>color name : ar</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="color-tr form-group m-3">
+                    <lable>color name : tr</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div
+                    class="color-btn d-flex justify-content-center align-items-end m-3"
+                  >
+                    <button class="counter-plus btn btn-light">+</button>
+                  </div>
+                </div>
+
+                <!-- Size -->
+                <div class="div-size d-flex flex-column flex-md-row">
+                  <div class="size-ar form-group m-3">
+                    <lable>size : ar</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="size-tr form-group m-3">
+                    <lable>size : tr</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div
+                    class="size-btn d-flex justify-content-center align-items-end m-3"
+                  >
+                    <button class="counter-plus btn btn-light">+</button>
+                  </div>
+                </div>
+
+                <!-- Other Feats -->
+                <!-- Title -->
+                <div class="div-title d-flex flex-column flex-md-row">
+                  <div class="title-ar form-group m-3">
+                    <lable>title : ar</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="title-tr form-group m-3">
+                    <lable>title : tr</lable>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- Stock & Price -->
+                <div class="div-stock-price d-flex flex-column flex-md-row">
+                  <div class="stock-div form-group m-3">
+                    <lable>stock</lable>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="price-div form-group m-3">
+                    <lable>price $</lable>
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- Has Discount & Is Timed Discount -->
+                <div class="div-dis-timed d-flex flex-column flex-md-row">
+                  <div class="form-check m-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      has discount
+                    </label>
+                  </div>
+                  <div class="form-check m-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      is timed discount
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Old Price & Discount Percent -->
+                <div class="div-oldP-disP d-flex flex-column flex-md-row">
+                  <div class="oldP-div form-group m-3">
+                    <lable>old price $</lable>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="disP-div form-group m-3">
+                    <lable>discount percent %</lable>
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- Discount Start & Discount End -->
+                <div class="div-disS-disE d-flex flex-column flex-md-row">
+                  <div class="disS-div form-group m-3">
+                    <lable>discount start</lable>
+                    <input type="date" class="form-control" />
+                  </div>
+                  <div class="disE-div form-group m-3">
+                    <lable>discount end</lable>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- status -->
+                <div class="div-disS-disE d-flex flex-column align-items-start">
+                  <span class="ml-3 mt-3">status</span>
+                  <div
+                    class="disS-div form-group d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="disS-div form-group ml-3 mt-1 d-flex justify-content-center align-items-center"
+                    >
+                      <input type="radio" id="active" name="active" />
+                      <label class="mx-2 mb-0" for="active">active</label>
+                    </div>
+
+                    <div
+                      class="disS-div form-group ml-3 mt-1 d-flex justify-content-center align-items-center"
+                    >
+                      <input type="radio" id="in-active" name="in-active" />
+                      <label class="mx-2 mb-0" for="in-active">in-active</label>
+                    </div>
+
+                    <div
+                      class="disS-div form-group ml-3 mt-1 d-flex justify-content-center align-items-center"
+                    >
+                      <input type="radio" id="hidden" name="hidden" />
+                      <label class="mx-2 mb-0" for="hidden">hidden</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end -->
               </div>
             </div>
           </div>
@@ -1004,15 +1144,33 @@
     <!-- Sidebar js -->
     <script src="assets/plugins/sidebar/sidebar.js"></script>
 
-    <!-- Internal Check-all-mail js-->
-    <script src="assets/js/check-all-mail.js"></script>
+    <!-- Internal Chart.Bundle js-->
+    <script src="assets/plugins/chart.js/Chart.bundle.min.js"></script>
+
+    <!-- Peity js-->
+    <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+
+    <!-- Internal Apexchart js-->
+    <script src="assets/js/apexcharts.js"></script>
+
+    <!-- Internal Polyfills js-->
+    <script src="assets/plugins/polyfill/polyfill.min.js"></script>
+    <script src="assets/plugins/polyfill/classList.min.js"></script>
+    <script src="assets/plugins/polyfill/polyfill_mdn.js"></script>
+
+    <!-- Internal Dashboard js-->
+    <script src="assets/js/ecommerce-dashboard.js"></script>
+
+    <!-- Internal Jvectormap js-->
+    <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/plugins/jvectormap/gdp-data.js"></script>
 
     <!-- Sticky js -->
     <script src="assets/js/sticky.js"></script>
 
     <!-- Custom js -->
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/custom-category.js"></script>
 
     <!-- Switcher js -->
     <script src="assets/switcher/js/switcher.js"></script>
