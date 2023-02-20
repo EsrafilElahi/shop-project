@@ -55,6 +55,70 @@
     <!-- Select2 css-->
     <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
 
+    <!-- Owl-carousel css-->
+    <link
+      href="assets/plugins/owl-carousel/owl.carousel.css"
+      rel="stylesheet"
+    />
+
+    <!-- Mutipleselect css-->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/multipleselect/multiple-select.css"
+    />
+
+    <!-- Internal DataTables css-->
+    <link
+      href="assets/plugins/datatable/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/datatable/responsivebootstrap4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/datatable/fileexport/buttons.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Internal Daterangepicker css-->
+    <link
+      href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css"
+      rel="stylesheet"
+    />
+
+    <!-- InternalFileupload css-->
+    <link
+      href="assets/plugins/fileuploads/css/fileupload.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- InternalFileupload css-->
+    <link
+      href="assets/plugins/fileuploads/css/fileupload.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- InternalFancy uploader css-->
+    <link
+      href="assets/plugins/fancyuploder/fancy_fileupload.css"
+      rel="stylesheet"
+    />
+
+    <!-- InternalSumoselect css-->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/sumoselect/sumoselect-rtl.css"
+    />
+
+    <!-- Internal TelephoneInput css-->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/telephoneinput/telephoneinput-rtl.css"
+    />
+
     <!-- Sidemenu css-->
     <link href="assets/css-rtl/sidemenu/sidemenu.css" rel="stylesheet" />
 
@@ -418,22 +482,43 @@
       <!---------------------------------------------- Main Content--------------------------------------------->
       <div class="main-content side-content pt-0">
         <div class="container-fluid">
+          <!-- Page Header -->
+          <div class="page-header">
+            <div>
+              <h2 class="main-content-title tx-24 mg-b-5">Category</h2>
+              <ol class="breadcrumb">
+                <!-- <li class="breadcrumb-item"><a href="#">products</a></li> -->
+                <li class="breadcrumb-item active" aria-current="page">
+                  category
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- End Page Header -->
           <!-------------------- custom form -------------------->
           <div class="all-block">
             <div class="form-block-top mt-5 mt-md-3">
               <!-- name -->
-              <div class="div-name d-flex flex-column flex-md-row">
-                <div class="div-name-ar form-group m-3">
+              <div
+                class="div-name d-flex flex-column flex-md-row card card-custom"
+              >
+                <div
+                  class="div-name-ar form-group m-3 needs-validation was-validated"
+                >
                   <lable>name : ar</lable>
                   <input
+                    required
                     value="test name ar"
                     type="text"
                     class="form-control"
                   />
                 </div>
-                <div class="div-name-tr form-group m-3">
+                <div
+                  class="div-name-tr form-group m-3 needs-validation was-validated"
+                >
                   <lable>name : tr</lable>
                   <input
+                    required
                     value="test name tr"
                     type="text"
                     class="form-control"
@@ -442,24 +527,44 @@
               </div>
 
               <!-- desc -->
-              <div class="div-desc d-flex flex-column flex-md-row">
-                <div class="div-desc-ar form-group m-3">
+              <div
+                class="div-desc d-flex flex-column flex-md-row card card-custom my-4"
+              >
+                <div
+                  class="div-desc-ar form-group m-3 needs-validation was-validated"
+                >
                   <lable>description : ar</lable>
-                  <textarea cols="40" rows="6" type="text" class="form-control">
+                  <textarea
+                    cols="40"
+                    rows="6"
+                    type="text"
+                    class="form-control"
+                    required
+                  >
 description ar</textarea
                   >
                 </div>
-                <div class="div-desc-tr form-group m-3">
+                <div
+                  class="div-desc-tr form-group m-3 needs-validation was-validated"
+                >
                   <lable>description : tr</lable>
-                  <textarea cols="40" rows="6" type="text" class="form-control">
+                  <textarea
+                    cols="40"
+                    rows="6"
+                    type="text"
+                    class="form-control"
+                    required
+                  >
 description tr</textarea
                   >
                 </div>
               </div>
 
               <!-- image file input -->
-              <div class="div-file-input d-flex flex-column flex-md-row">
-                <div class="div-desc-ar form-group m-3">
+              <div
+                class="div-file-input d-flex flex-column flex-md-row card card-custom"
+              >
+                <!-- <div class="div-desc-ar form-group m-3">
                   <label>
                     your image file
                     <input
@@ -469,24 +574,38 @@ description tr</textarea
                       accept="image/png, image/gif, image/jpeg"
                     />
                   </label>
+                </div> -->
+                <div class="div-desc-ar form-group m-3 card custom-card">
+                  <span class="pr-4 pt-3">your image file</span>
+                  <div class="card-body">
+                    <div>
+                      <input type="file" class="dropify" data-height="200" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="form-block mt-5 mt-md-3">
+            <div class="form-block mt-5 mt-md-3 card card-custom my-4">
               <!-- FT -->
               <div class="div-ft d-flex flex-column flex-md-row">
-                <div class="ft-ar form-group m-3">
+                <div
+                  class="ft-ar form-group m-3 needs-validation was-validated"
+                >
                   <lable>feature title : ar</lable>
                   <input
+                    required
                     value="test feature ar"
                     type="text"
                     class="form-control"
                   />
                 </div>
-                <div class="ft-tr form-group m-3">
+                <div
+                  class="ft-tr form-group m-3 needs-validation was-validated"
+                >
                   <lable>feature title : tr</lable>
                   <input
+                    required
                     value="test feature tr"
                     type="text"
                     class="form-control"
@@ -513,17 +632,23 @@ description tr</textarea
 
               <!-- FN -->
               <div class="div-fn d-flex flex-column flex-md-row">
-                <div class="fn-ar form-group m-3">
+                <div
+                  class="fn-ar form-group m-3 needs-validation was-validated"
+                >
                   <lable>feature name : ar</lable>
                   <input
+                    required
                     value="test feature name ar"
                     type="text"
                     class="form-control"
                   />
                 </div>
-                <div class="fn-tr form-group m-3">
+                <div
+                  class="fn-tr form-group m-3 needs-validation was-validated"
+                >
                   <lable>feature name : tr</lable>
                   <input
+                    required
                     value="test feature name tr"
                     type="text"
                     class="form-control"
@@ -824,31 +949,56 @@ description tr</textarea
 
     <!-- Bootstrap js-->
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap-rtl.js"></script>
+
+    <!-- Perfect-scrollbar js -->
+    <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min-rtl.js"></script>
+
+    <!-- Sidemenu js -->
+    <script src="assets/plugins/sidemenu/sidemenu-rtl.js"></script>
+
+    <!-- Sidebar js -->
+    <script src="assets/plugins/sidebar/sidebar-rtl.js"></script>
 
     <!-- Select2 js-->
     <script src="assets/plugins/select2/js/select2.min.js"></script>
 
-    <!-- Perfect-scrollbar js -->
-    <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- Jquery-Ui js-->
+    <script src="assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
 
-    <!-- Sidemenu js -->
-    <script src="assets/plugins/sidemenu/sidemenu.js"></script>
+    <!-- Internal Daternagepicker js-->
+    <script src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-    <!-- Sidebar js -->
-    <script src="assets/plugins/sidebar/sidebar.js"></script>
+    <!-- Internal Fileuploads js-->
+    <script src="assets/plugins/fileuploads/js/fileupload.js"></script>
+    <script src="assets/plugins/fileuploads/js/file-upload.js"></script>
 
-    <!-- Internal Check-all-mail js-->
-    <script src="assets/js/check-all-mail.js"></script>
+    <!-- InternalFancy uploader js-->
+    <script src="assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+    <script src="assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+    <script src="assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+    <script src="assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+    <script src="assets/plugins/fancyuploder/fancy-uploader.js"></script>
+
+    <!-- Internal Form-elements js-->
+    <script src="assets/js/advanced-form-elements.js"></script>
+    <script src="assets/js/select2.js"></script>
+
+    <!-- InternalSumoselect js-->
+    <script src="assets/plugins/sumoselect/jquery.sumoselect.js"></script>
+
+    <!-- Internal TelephoneInput js-->
+    <script src="assets/plugins/telephoneinput/telephoneinput.js"></script>
+    <script src="assets/plugins/telephoneinput/inttelephoneinput.js"></script>
 
     <!-- Sticky js -->
     <script src="assets/js/sticky.js"></script>
 
     <!-- Custom js -->
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/custom-category.js"></script>
 
     <!-- Switcher js -->
-    <script src="assets/switcher/js/switcher.js"></script>
+    <script src="assets/switcher/js/switcher-rtl.js"></script>
   </body>
 </html>
