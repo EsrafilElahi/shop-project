@@ -371,35 +371,35 @@ var intlTelInput = {
     // and then using JSON.stringify to print it out as a string again and copy it here.
     // Also commented some countries which we dont yet have flags for.
     countries: [ {
-        name: "Afghanistan",
+        name: "افغانستان",
         cca2: "af",
         "calling-code": "93"
     }, {
-        name: "Albania",
+        name: "آلبانی",
         cca2: "al",
         "calling-code": "355"
     }, {
-        name: "Algeria",
+        name: "الجزایر",
         cca2: "dz",
         "calling-code": "213"
     }, {
-        name: "American Samoa",
+        name: "ساموآ آمریکایی",
         cca2: "as",
         "calling-code": "1684"
     }, {
-        name: "Andorra",
+        name: "آندورا",
         cca2: "ad",
         "calling-code": "376"
     }, {
-        name: "Angola",
+        name: "آنگولا",
         cca2: "ao",
         "calling-code": "244"
     }, {
-        name: "Anguilla",
+        name: "آنگویلا",
         cca2: "ai",
         "calling-code": "1264"
     }, {
-        name: "Antigua and Barbuda",
+        name: "آنتیگوا و باربودا",
         cca2: "ag",
         "calling-code": "1268"
     }, {
@@ -1195,15 +1195,15 @@ var intlTelInput = {
         cca2: "ua",
         "calling-code": "380"
     }, {
-        name: "United Arab Emirates",
+        name: "امارات متحده عربی",
         cca2: "ae",
         "calling-code": "971"
     }, {
-        name: "United Kingdom",
+        name: "انگلستان",
         cca2: "gb",
         "calling-code": "44"
     }, {
-        name: "United States",
+        name: "ایالات متحده",
         cca2: "us",
         "calling-code": "1"
     }, {

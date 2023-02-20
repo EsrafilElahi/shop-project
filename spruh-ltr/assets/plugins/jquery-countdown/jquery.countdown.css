@@ -1,6 +1,7 @@
 /* jQuery Countdown styles 2.0.0. */
 #launch_date{
 	    margin: 0;
+	direction: ltr;
 }
 .countdown-rtl {
 	direction: rtl;
